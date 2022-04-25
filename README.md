@@ -23,7 +23,7 @@ The main problem in this apporach was the stationarity of the time series. I tri
 
 Before building an ML model, feature engineering was done. Basic time related features such as day, month, hour, weekofyear, dayofyear, weekday were created. Aggregated lag features were also created but it did not help imporve score much as there were many missing values.
 
-CatBoost algorithm was used along with 5 fold sampling. The output from the 5 folds were weighted averaged based on evaluation scores(The lower the score, higher the weight).The evaluation metric was 'RMSE'. The local CV obtained was 34.85 which gave a public leaderboard score of 33.51 and a private leaderboard score of 33.176. Linear Regression was also tried but CatBoost gave a better score. Hence, CatBoost was selected as the final model.
+CatBoost algorithm was used along with 5 fold sampling. The output from the 5 folds were weighted averaged based on evaluation scores(The lower the score, higher the weight).The evaluation metric was 'RMSE'. The local CV obtained was 34.825 which gave a public leaderboard score of 33.51 and a private leaderboard score of 33.176. Linear Regression was also tried but CatBoost gave a better score. Hence, CatBoost was selected as the final model.
 
 ## Final Result
 
